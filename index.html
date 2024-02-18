@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audio Samples for AI-assisted Tagging of Deepfake Audio Calls using Challenge-Response</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .figure {
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+  }
+
+  .figure:not(:last-child) {
+    border-bottom: 2px solid #ccc; /* Separator between figures */
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff; /* Gray background for the whole grid */
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid black; /* Just for visual distinction */
+    margin: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 30px; /* Spacing between audios */
+    margin-top: 30px;
+  }
+
+
+  .video {
+    width: 512px;
+    height: 320px;
+    background-color: white; /* Black background to indicate audio space */
+  }
+
+  .audio {
+    width: 256px;
+    height: 30px;
+    background-color: white; /* Black background to indicate audio space */
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .audio iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+.row-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  padding: 15px;
+  text-orientation: mixed;
+  font-weight: bold; 
+}
+
+.column-label {
+  display: flex;
+  font-weight: bold; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+.grid-5x1 {
+  grid-template-columns: repeat(5, 300px);
+}
+
+/* Adjustments for 4x4 grid */
+.grid-5x9 {
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: repeat(9, auto);
+}
+
+/* Adjustments for 5x4 grid */
+.grid-5x11 {
+  grid-template-columns: repeat(5, 300px);
+  grid-template-rows: repeat(11, auto);
+}
+
+</style>
+
+
+</head>
+<body>
+
+<h1>Audio Samples for AI-assisted Tagging of Deepfake Audio Calls using Challenge-Response</h1>
+<div class="figure" id="figure2">
+  <h3>Audio Samples of Regular Speech</h3>
+  <p> First is the imposter voice. Second is the intended ground truth. Third is a deepfake, an imposter creates using the target's recording, other than the ground truth. Last column is a short caption. </p>
+
+<div class="grid-container">
+    <div class="grid grid-5x1">
+   <!-- Row labels --> 
+      <div class="row-label"> No Challenge</div>
+  <div class="audio" style="grid-column: 2; grid-row: 1;"> 
+    <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp00.mp3"></audio></div>
+  </div>
+  <div class="audio" style="grid-column: 3; grid-row: 1;"> 
+    <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt00.mp3"></audio></div>
+  </div>
+  <div class="audio" style="grid-column: 4; grid-row: 1;"> 
+    <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df00.mp3"></audio></div>
+  </div>
+  <div class="text" style="grid-column: 5; grid-row: 1;">Deepfake Sounds Genuine
+  </div>
+                     <!-- Column labels -->
+  <div class="column-label" style="grid-column: 2;">Imposter Attempting Challenge</div>
+  <div class="column-label" style="grid-column: 3;">Ground Truth (Intended)</div>
+  <div class="column-label" style="grid-column: 4;">Deepfake (Imp => Tar)</div>
+</div></div>
+
+<!-- Figure 1 with 4x4 Grid -->
+
+<div class="figure" id="figure2">
+  <h3>Audio Samples of Top-11 Valid Challenges (not showing target voice sample.)</h3>
+<div class="grid-container">
+  <div class="grid grid-5x11">
+  
+      <!-- Row labels --> 
+    <div class="row-label"> Static Mouth </div>
+    <div class="row-label"> Cup mouth </div>
+    <div class="row-label"> Whisper </div>
+    <div class="row-label"> Speak softly </div>
+    <div class="row-label"> High Pitch </div>
+    <div class="row-label"> Foreign Words </div>
+    <div class="row-label"> Sing </div>
+    <div class="row-label"> Emotions </div>
+    <div class="row-label"> Crosstalk </div>
+    <div class="row-label"> Instr. Playback </div>
+    <div class="row-label"> Lyric Playback</div>
+    
+      <div class="audio" style="grid-column: 2; grid-row: 1;"> 
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp01.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 2;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp02.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 3;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp03.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 4;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp05.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 5;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp09.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 6;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp12.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 7;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp14.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 8;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp16.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 9;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp20.mp3"></audio></div>
+       </div> 
+       <div class="audio" style="grid-column: 2; grid-row: 10;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp21.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 11;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp22.mp3"></audio></div>
+       </div> 
+
+
+      <div class="audio" style="grid-column: 3; grid-row: 1;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt01.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 2;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt02.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 3;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt03.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 4;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt05.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 5;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt09.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 6;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt12.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 7;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt14.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 8;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt16.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 9;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt20.mp3"></audio></div>
+       </div> 
+     <div class="audio" style="grid-column: 3; grid-row: 10;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt21.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 11;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt22.mp3"></audio></div>
+       </div> 
+
+      <div class="audio" style="grid-column: 4; grid-row: 1;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df01.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 2;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df02.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 3;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df03.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 4;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df05.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 5;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df09.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 6;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df12.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 7;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df14.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 8;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df16.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 9;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df20.mp3"></audio></div>
+       </div> 
+     <div class="audio" style="grid-column: 4; grid-row: 10;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df21.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 11;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df22.mp3"></audio></div>
+       </div> 
+    <!-- 01 02 03 05 09 12 14 16 20 21 22 -->
+      <div class="text" style="grid-column: 5; grid-row: 1;">Audible distortions at "Vivid"
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 2;">Non-compliance and Distortions
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 3;">Non-compliance
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 4;">Crackling Voice & Non-Compliance
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 5;">Non-Compliance
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 6;"> Vibrating Voice Distortions (Swahili: ’Simba anapenda kupumzika chini ya mti mkubwa.’)
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 7;">Non-compliance towards the start
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 8;"> Sounds flatter in comparison to imposter
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 9;">Non-Compliance and Distortions
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 10;">Non-Compliance and Distortions
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 11;">Non-Compliance and Distortions
+      </div>
+
+                   <!-- Column labels -->
+    <div class="column-label" style="grid-column: 2;">Imposter Attempting Challenge</div>
+    <div class="column-label" style="grid-column: 3;">Ground Truth (Intended)</div>
+    <div class="column-label" style="grid-column: 4;">Deepfake (Imp => Tar)</div>
+      
+    </div>
+</div>
+<div class="figure" id="figure1">
+  <h3>Audio Samples of the 9 Weaker Tasks</h3>
+<div class="grid-container">
+    <div class="grid grid-5x9">
+    
+
+      <!-- Row labels --> 
+      <div class="row-label"> Speak Loudly</div>
+      <div class="row-label"> Read quickly</div>
+      <div class="row-label"> Read Slowly</div>
+      <div class="row-label"> Hold nose</div>
+      <div class="row-label"> Low Pitch</div>
+      <div class="row-label"> Accent</div>
+      <div class="row-label"> Question</div>
+      <div class="row-label"> Cough/Whistle</div>
+      <div class="row-label"> Clap</div>
+      <div class="audio" style="grid-column: 2; grid-row: 1;"> 
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp04.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 2;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp06.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 3;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp07.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 4;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp08.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 5;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp10.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 6;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp13.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 7;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp17.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 8;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp18.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 2; grid-row: 9;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/imp19.mp3"></audio></div>
+       </div> 
+
+      <div class="audio" style="grid-column: 3; grid-row: 1;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt04.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 2;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt06.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 3;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt07.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 4;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt08.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 5;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt10.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 6;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt13.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 7;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt17.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 8;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt18.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 3; grid-row: 9;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/gt19.mp3"></audio></div>
+       </div> 
+
+       <div class="audio" style="grid-column: 4; grid-row: 1;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df04.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 2;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df06.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 3;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df07.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 4;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df08.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 5;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df10.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 6;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df13.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 7;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df17.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 8;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df18.mp3"></audio></div>
+       </div> 
+      <div class="audio" style="grid-column: 4; grid-row: 9;">
+        <div id="interpolation-audio-wrapper"><audio controls="" preload="none"><source src="./assets/final/df19.mp3"></audio></div>
+       </div> 
+      <!-- 4, 6, 7, 8, 10, 13, 17, 18, 19 -->
+
+      <div class="text" style="grid-column: 5; grid-row: 1;">Deepfake Sounds Genuine
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 2;">Deepfake Sounds Genuine
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 3;">Deepfake Sounds Genuine
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 4;">Deepfake Sounds Genuine
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 5;">Deepfake Sounds Genuine
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 6;">Deepfake Sounds Genuine
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 7;">Deepfake Sounds Genuine
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 8;">Deepfake Sounds Genuine
+      </div>
+      <div class="text" style="grid-column: 5; grid-row: 9;">Deepfake Sounds Genuine
+      </div>
+                   <!-- Column labels -->
+    <div class="column-label" style="grid-column: 2;">Imposter Attempting Challenge</div>
+    <div class="column-label" style="grid-column: 3;">Ground Truth (Intended)</div>
+    <div class="column-label" style="grid-column: 4;">Deepfake (Imp => Tar)</div>
+    </div>
+  </div>
+ 
+  <!-- Figure 1 with 4x4 Grid -->
+<div class="figure" id="figure1">
+    <h3>Original Video Samples (part of the open-source dataset.</h3>
+    <!-- <div class="grid-container">
+      <div class="grid" style="grid-template-columns: auto repeat(3, 1fr); grid-template-rows: repeat(2, auto) auto;"> -->
+    <div class="grid-container">
+        <div class="grid grid-1x3">
+        <!-- Row labels -->
+        <!-- <div class="row-label">Row 1 Text</div> -->
+        <!-- <div class="row-label">Row 2 Text</div> -->
+  
+        <div class="video" style="grid-column: 2; grid-row: 1;">
+          <iframe src="./assets/final/video_samples/1.mp4" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- Repeat for the rest of the audios -->
+        <div class="video" style="grid-column: 3; grid-row: 1;">
+          <iframe src="./assets/final/video_samples/2.mp4" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="video" style="grid-column: 4; grid-row: 1;">
+          <iframe src="./assets/final/video_samples/3.mp4" title="" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+          <!-- Column labels for Row 1 -->
+        <div class="column-label" style="grid-column: 2; grid-row: 2;">High-Pitch</div>
+        <div class="column-label" style="grid-column: 3; grid-row: 2;">Cross-talk (with a self-played audio on phone)</div>
+        <div class="column-label" style="grid-column: 4; grid-row: 2;">Whisper</div>
+
+      </div>
+    </div>
+  </div>
+ 
+</body>
+</html>
